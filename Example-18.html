@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+</head>
+<style>
+    .main{
+        width: 500px;
+        height: 500px;
+        background-color: brown;
+        margin-left: 700px;
+        align-items: center;
+    }
+    .img{
+        width: 500px;
+        height: 0;
+        transition: height 1s;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .main:hover .img{
+            height: 100%;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="./video/logo1.png" alt="img">
+        </div>
+    </div>
+</body>
+</html>

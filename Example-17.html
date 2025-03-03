@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .sub-header{
+        background-color: rgb(176, 83, 83);
+        color: white;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    li{
+        padding: 0 22px;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: gray;
+        color: white;
+    }
+    *{
+        margin: 0;
+    }
+    .banner{
+        background-image: url('../HTML/video/xyz.jpg');
+        height: 400px;
+    }
+    .content{
+        position: absolute;
+        background-color: white;
+        color: black;
+        display: none;
+    }
+    .content>li:hover{
+        background-color: gray;
+        color: white;
+    }
+    .hover{
+        position: relative;
+    }
+    .hover:hover .content{
+        display: block;
+    }
+</style>
+<body>
+    <div class="sub-header">
+        <div class="hover">
+        <li>list1</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list2</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list3</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list4</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list5</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list6</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        <div class="hover">
+        <li>list7</li>
+        <div class="content">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+        </div>
+        </div>
+        
+        </div>
+        
+        <div class="banner"></div>
+</body>
+</html>

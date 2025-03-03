@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example-4 transform</title>
+</head>
+<style>
+    p{
+        display: flex;
+        justify-content: center;
+        transition: transform 1s;
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin-left: 850px;
+        animation: rotatetranslate 4s infinite;
+    }
+
+    .p1:hover{
+        transform: translate(100px,200px);
+    }
+    .p2:hover{
+        transform: rotate(360deg);
+    }
+    .p3:hover{
+        transform: scale(2,2);
+    }
+    .p4:hover{
+        transform:skew(30deg,10deg);
+    }
+    .p5:hover{
+        transform:perspective(500px) rotateY(30deg) rotateX(20deg) translateZ(50px);
+    }
+    @keyframes p6{
+        0%{
+            transform: rotate(0deg) scale(1);
+        }
+        50%{
+            transform: rotate(180deg) scale(1.5);
+        }
+        100%{
+            transform: rotate(360deg) scale(1);
+        }
+    }
+</style>
+<body>
+    <p style="color: rgb(151, 151, 198); background-color: aqua;" class="p1">My Name is Parnav</p>
+    <p style="color: rgb(3, 3, 3); background-color: rgb(255, 0, 242);" class="p2">I Study in SVMIT Collage</p>
+    <p style="color: blue; background-color: rgb(255, 196, 0);" class="p3">My Name is Himil</p>
+    <p style="color: red; background-color: rgb(63, 48, 63);" class="p4">I Study in KJ Collage</p>
+    <p style="color: rgb(13, 168, 39); background-color: rgb(236, 7, 7);" class="p5">I Study in KJ Collage</p>
+    <p style="color: rgb(13, 168, 39); background-color: rgb(236, 7, 7);" class="p6">Rotate & translate</p>
+
+
+</body>
+</html>
